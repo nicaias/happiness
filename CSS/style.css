@@ -1,0 +1,214 @@
+
+
+/*fonts*/
+.bcursive {
+    font-family: "beth-ellen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.reg-cursive{
+    font-family: "adobe-handwriting-ernie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.hand {
+    font-family: "adobe-handwriting-tiffany", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+/*colors*/
+.pinkbg {
+    background-color: #ffdae6;
+}
+.claybg {
+    background-color: rgb(248, 168, 210);
+}
+.brownbg {
+    background-color: rgb(190, 171, 157);
+}
+.dbrown {
+    background-color: rgb(80, 76, 68);
+}
+.container {
+    margin: 90px auto;
+    border: 2px solid black;
+    padding: 25px 50px;
+    background-color: white;
+}
+/*general*/
+.button {
+    transition-duration: 0.4s;
+    text-decoration: none;
+    padding: 8px 15px;
+    color: rgb(40, 25, 14);
+    border: 2px solid rgb(126, 74, 107);
+    margin: 20px;
+}
+.button:hover {
+    background-color: rgb(248, 168, 210);
+    color: white;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/*hamburger menu*/
+#menu {
+  z-index: 2;
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #ff75b1;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.nav li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.menu-bg, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #ff75b1, #f65c9f);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 530px;
+  height: 480px;
+  transform: translate(-60%,-30%);
+}
+
+/*hover underline transition*/
+/*hover transition from https://css-tricks.com/css-link-hover-effects/*/
+li a {
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+li a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .2s ease-in-out;
+}
+
+.button a {
+  color: black;
+  text-decoration: none;
+}
+.button {
+  transition: 0.3s ease;
+}
+.button a {
+  text-decoration: none;
+  position: relative;
+  color: black;
+  font-size: 2vw;
+}
+.button a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.button a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  background-color: rgb(0, 0, 0);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .2s ease-in-out;
+}
+
+.logo {
+    height: 6vw;
+    width: auto;
+    float: right;
+    padding: 0 1%;
+}
