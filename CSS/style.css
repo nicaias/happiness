@@ -17,6 +17,15 @@
     font-style: normal;
     font-size: 20px;
 }
+/*icons*/
+.socials a {
+  color: black;
+  text-decoration: none;
+  padding-right: 1vw;
+}
+.socials {
+  font-size: 2vw;
+}
 /*colors*/
 .pinkbg {
     background-color: #ffdae6;
