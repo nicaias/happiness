@@ -17,6 +17,37 @@
     font-style: normal;
     font-size: 20px;
 }
+/*hover effect demo from https://css-tricks.com/css-link-hover-effects/*/
+/* anchor itself */
+a.link {
+  display: inline-block;       /* important so width/height behave */
+  position: relative;          /* anchor is containing block for ::before */
+  z-index: 1;                  /* keep text above the pseudo-element */
+  text-decoration: none;
+  color: #18272F;
+  font-weight: 700;
+}
+
+/* the background pseudo-element */
+a.link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 8px;
+  background-color: hsla(322, 100%, 79%, 0.595);
+  z-index: 0;                  /* sits beneath the text (text is z-index:1) */
+  transition: all .3s ease-in-out;
+  pointer-events: none;        /* safe: doesn't block clicks */
+  border-radius: 4px;          /* optional nice rounding */
+}
+
+/* hover: expand to full height and align to bottom 0 */
+a.link:hover::before {
+  bottom: 0;
+  height: 100%;
+}
 /*icons*/
 .socials a {
   color: black;
@@ -220,4 +251,32 @@ li a:before {
     width: auto;
     float: right;
     padding: 0 1%;
+}
+
+/*footer*/
+.wave-footer {
+  margin-top: 60px;
+  position: relative;
+  background: #ffbcd4; /* soft pink */
+  color: #4d4d4d;
+  text-align: center;
+  padding: 40px 20px 30px;
+  font-family: inherit;
+}
+
+.wave-footer .wave {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+}
+
+.wave-footer .wave path {
+  fill: #ffbcd4; /* same pink as background */
+}
+
+.wave-footer .footer-content p {
+  margin: 6px 0;
+  font-size: 20px;
 }
