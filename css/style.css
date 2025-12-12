@@ -185,8 +185,8 @@ a.link:hover::before {
 }
 
 .change-bg {
-  width: 530px;
-  height: 480px;
+  width: 600px;
+  height: 600px;
   transform: translate(-60%,-30%);
 }
 
